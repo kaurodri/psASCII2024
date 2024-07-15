@@ -11,7 +11,7 @@ body{
 .navbar{
     display: flex;
 
-    height: 45px;
+    height: 50px;
     background: #2d2d2d;
 
     justify-content: center;
@@ -21,21 +21,31 @@ body{
 }
 
 .logo{
-    flex: 20%;
+    flex: 10%;
     /* border: 1px solid red; */
     text-align: left;
-    
-    
     margin-left: 10%;
+    
+}
+
+.logo a{
+    text-decoration: none;
 }
 
 .logo h1{
     font-family: "Quicksand", sans-serif;
     color: white;
+    /* border: 1px solid red; */
+}
+
+.logo:hover h1{
+    color: #ccff00;
+    /* filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.9)); */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
 }
 
 .menu {
-    flex: 70%;
+    flex: 90%;
     /* border: 1px solid red; */
     text-align: right;
     padding: 7px 
@@ -44,8 +54,9 @@ body{
 .menu a{
     color: white;
     text-decoration: none;
-    font-size: 18px;
-    padding: 7px 16px;
+    font-size: 15px;
+    padding: 12px 16px;
+    font-weight: 300;
 }
 
 .menu a:hover{
@@ -94,19 +105,22 @@ body{
 }
 
 .contato-btn{
-
     display: flex;
     align-items: center;
     justify-content: right;
     margin-right: 5%;
-
-    
 }
 
-#botao{
+.contato-btn a:hover{
+    color: darkblue;
+}
+
+.botao{
     /* border: 1px solid red; */
     text-decoration: none;
-    color: #838383;
+    font-size: 13px;
+    color: #a5a5a5;
+    /* color: #838383; */
 }
 .divisor-img{
     padding: 5px;
@@ -116,7 +130,151 @@ body{
     border-left: 2px solid;
     display: flex;
 }
-.contato-btn img{
-    height: 20px;
+.divisor-img img{
+    border: 2px solid #a5a5a5;
+    padding: 2px;
+    border-radius: 50%;
+    height: 26px;
     /* border: 1px solid red; */
+    cursor: pointer;
+}
+
+.divisor-img:hover img{
+    border: 2px solid darkblue;
+}
+
+.banner img{
+    height: 400px;
+}
+
+.categorias{
+    height: 30px;
+    background: #000000;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.categorias a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 5px 16px;
+    border: 1px solid white;
+    margin: 10px;
+    
+}
+
+section{
+    /* border: 1px solid red; */
+    margin-left: 5%;
+    margin-right: 5%;
+    display: inline-block;
+    text-align: center;
+    width: 90%;
+
+}
+
+.servicos{
+    display: flex;
+    margin-top: -10px;
+    
+}
+
+.lancamento{
+    font-family: "Quicksand", sans-serif;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+}
+
+.lancamento h3{
+    border-bottom: 2px solid;
+}
+
+.card{
+    
+    display: inline-block;
+    width: 20%;
+    
+    margin: 1%;
+    border: 2px solid #ccff00;
+    border-radius: 10px;
+    /* cursor: pointer; */
+    height: 300px;
+
+    
+}
+
+.card-text h3{
+    font-size: 11px;
+}
+.card-text p{
+    font-size: 10px;
+}
+/* .card:hover{
+   background: #FF2978;
+    color: white;
+    
+}
+
+.card:hover img{
+    display: none;
+}
+
+.card:hover .card-text{
+    display: none;
+}
+
+.card:hover .texto-oculto{
+    display: block;
+}
+
+.texto-oculto{
+    display: none;
+} */
+
+.card img{
+    height: 150px;
+}
+
+.linkcartao{
+    padding: 17px;
+    /* border: 1px solid red; */
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.detalhes-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 30px;
+
+    /* border: 1px solid red; */
+}
+
+.detalhes-btn a{
+    font-size: 10px;
+    margin-left: 10px;
+
+    background: #2d2d2d;
+    padding: 10px 10px;
+    color: white;
+    border-radius: 5px;
+
+    text-decoration: none;
+}
+
+.detalhes-btn a:hover{
+    color: #ccff00;
+    font-weight: 500;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);;
+}
+
+.detalhes-btn p{
+    font-size: 13px;
 }
