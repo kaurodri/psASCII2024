@@ -272,7 +272,7 @@ section{
 .detalhes-btn a:hover{
     color: #ccff00;
     font-weight: 500;
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
 }
 
 .detalhes-btn p{

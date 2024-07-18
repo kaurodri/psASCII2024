@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="sortcut icon" href="img/fav.ico" type="image/x-icon" />
+    <title>Tudo Moda</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Um site para compras.">
+    <meta name="keywords" content="roupas, jeans">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <link rel="stylesheet" href="css/sacola-page.css">
+</head>
+
+<body>
+    <div class="top">
+        <div class="contato-btn">
+            <a class="botao" target="_blank" href="https://github.com/kaurodri/psASCII2024">Repositório</a>
+            <div style="height: 40px;" class="divisor-img"></div>
+            <a style="margin-left: -5px;" class="botao" target="_blank" href="https://github.com/kaurodri">GitHub</a>
+            <div class="divisor-img">
+                <img src="/img/brasil-icon.png">
+            </div>
+        </div>
+    </div>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="/index.html">
+                <h1>Tudo Moda</h1>
+            </a>
+        </div>
+        <div class="menu">
+            <a href="/index.html">Home</a>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Produtos</a>
+            <a href="#">Contato</a>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="cupom">
+            <img src="/img/cupom.png">
+            <h2>25% OFF</h2>
+        </div>
+    </header>
+    <section>
+        <div class="item">
+            <h2>Produto</h2>
+            <p>Vendido e entregue por <span style="font-weight: 600;">Tudo Moda</span></p>
+            <div class="item-box">
+                <div class="foto">
+                    <img id="imagem" src="/img/img-default.png">
+                </div>
+                <div class="info">
+                    <h2><span id="nome"></span></h2>
+                    <div class="conf-1">
+                        <p>Tamanho: <span id="tamanho"></span></p>
+                        <p>Cor: <span id="cor"></span></p>
+                    </div>
+                    <div class="conf-2">
+                        <p>Quantidade:</p>
+                        <p><span id="quantidade"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="resumo">
+            <h2>Resumo do Pedido</h2>
+            <div class="box">
+                <h2>Produto: <span id="valor"></span></h2>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const imagem = sessionStorage.getItem('imagemProduto');
+                const nome = sessionStorage.getItem('nomeProduto');
+                const valor = sessionStorage.getItem('valorProduto');
+                const cor = sessionStorage.getItem('corProduto');
+                const tamanho = sessionStorage.getItem('tamanhoProduto');
+                const quantidade = sessionStorage.getItem('quantidadeProduto');
+
+                const indice = {
+                    0: 'nome',
+                    1: 'valor',
+                    2: 'cor',
+                    3: 'tamanho',
+                    4: 'quantidade'
+                }
+                const Mapeamento = {
+                    'nome': nome,
+                    'valor': valor,
+                    'cor': cor,
+                    'tamanho': tamanho,
+                    'quantidade': quantidade
+                }
+
+                for (let i = 0; i < 5; i++) {
+                    if (Mapeamento[indice[i]]) {
+                        document.getElementById(indice[i]).textContent = Mapeamento[indice[i]];
+                    } else {
+                        document.getElementById(indice[i]).textContent = "-";
+                    }
+                }
+
+                if (imagem) {
+                    document.getElementById('imagem').src = imagem;
+                }
+
+                //limpa sessionStorage.
+                sessionStorage.removeItem('imagemProduto');
+                sessionStorage.removeItem('nomeProduto');
+                sessionStorage.removeItem('valorProduto');
+                sessionStorage.removeItem('corProduto');
+                sessionStorage.removeItem('tamanhoProduto');
+                sessionStorage.removeItem('quantidadeProduto');
+            })
+        </script>
+    </section>
+</body>
+
+</html>
