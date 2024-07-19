@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="sortcut icon" href="/img/fav.ico" type="image/x-icon" />
+    <title>Tudo Moda</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Um site para compras.">
+    <meta name="keywords" content="roupas, jeans">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsivo.css">
+    <link rel="stylesheet" href="/css/produto-page.css">
+    <style>
+        .cor-select {
+            background-color: #4b5686;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div class="contato-btn">
+            <a class="botao" target="_blank" href="https://github.com/kaurodri/psASCII2024">Repositório</a>
+            <div style="height: 40px;" class="divisor-img"></div>
+            <a style="margin-left: -5px;" class="botao" target="_blank" href="https://github.com/kaurodri">GitHub</a>
+            <div class="divisor-img">
+                <img src="/img/brasil-icon.png">
+            </div>
+        </div>
+    </div>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="/index.html">
+                <h1>Tudo Moda</h1>
+            </a>
+        </div>
+        <div class="menu">
+            <a href="/index.html">Home</a>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Produtos</a>
+            <a href="#">Contato</a>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="cupom">
+            <img src="/img/cupom.png">
+            <h2>25% OFF</h2>
+        </div>
+    </header>
+
+    <section>
+        <div class="foto">
+            <img src="/img/salopete-jeans.png">
+        </div>
+        <div class="infos">
+            <h2>Salopete Jeans Feminina Barra Desfiada</h2>
+            <span style="text-align: left;">
+                <p><span style="font-weight: 300;">entregue por </span><span style="font-weight: 900;">Tudo Moda</span>
+                </p>
+            </span>
+            <div class="divisor"></div>
+            <p style="text-align: left;"><span>R$149,90</span> (<span style="color: green;">25% off</span>)</p>
+            <p class="valor-final">R$112,40</p>
+            <p style="text-align: left;">Cor: <span style="font-weight: 600;">Jeans Azul</span></p>
+            <div class="cor-borda">
+                <div class="cor-select"></div>
+            </div>
+            <p style="text-align: left; margin-top: 15px;">Tamanho</p>
+            <div class="tamanhos">
+                <a>P</a>
+                <a>M</a>
+                <input type="checkbox" id="selecionar" style="display: none;">
+                <label for="selecionar" id="btn-g" class="bt-g">G</label>
+                <a>GG</a>
+            </div>
+            <div class="restantes">
+                <img src="/img/fogo1.png">
+                <p>Restam poucas unidades</p>
+            </div>
+            <div class="comprar-area">
+                <div class="quantidade-select">
+                    <button class="quant-btn" id="diminuir">-</button>
+                    <input type="number" id="quant-input" value="1" />
+                    <button class="quant-btn" id="aumentar">+</button>
+                </div>
+                <script src="/scripts/btn-quantidade.js"></script>
+                <button class="comprar-btn" onclick="comprar('/img/camisa-jeans.png', 'Camisa Jeans Manga Longa Masculina Denim Claro Pool', '139,90', 'Azul Claro', 'G', document.getElementById('quant-input').value)"><img src="/img/sacola-de-compras.png"><a>Comprar</a></button>
+                <script>
+                    function comprar(imagem, nome, valor, cor, tamanho, quantidade) {
+                        //sessionStorage
+                        sessionStorage.setItem('imagemProduto', imagem);
+                        sessionStorage.setItem('nomeProduto', nome);
+                        sessionStorage.setItem('valorProduto', valor);
+                        sessionStorage.setItem('corProduto', cor);
+                        sessionStorage.setItem('tamanhoProduto', tamanho);
+                        sessionStorage.setItem('quantidadeProduto', quantidade);
+
+                        //envio
+                        window.location.href = '/sacola.html';
+                    }
+                </script>
+            </div>
+            <div class="descri">
+                <h2>Descrição</h2>
+                <p>É perfeita para compor um look mais soltinho e carregado de personalidade. Feita de algodão, a peça conta com alças tradicionais, fechamento por zíper e botão lateral, bolso frontal e possui barra desfiada. Escolha uma camiseta ou camisa polo para compor a salopete e arrase!</p>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
