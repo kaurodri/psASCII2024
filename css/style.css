@@ -148,7 +148,8 @@ body{
 }
 
 .categorias{
-    height: 30px;
+    margin-top: -4px;
+    height: 50px;
     background: #000000;
     display: flex;
 
@@ -277,4 +278,20 @@ section{
 
 .detalhes-btn p{
     font-size: 13px;
+}
+
+.produtos{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid red;
+    height: 500px;
+}
+
+.produtos-btn{
+    padding: 20px;
+    border: 1px solid red;
+    background: #ccc;
+    height: 50px;
+    width: 250px;
 }

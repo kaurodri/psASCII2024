@@ -68,7 +68,8 @@
         <div class="resumo">
             <h2>Resumo do Pedido</h2>
             <div class="box">
-                <h2>Produto: <span id="valor"></span></h2>
+                <h2>Produto: R$<span id="valor"></span></h2>
+                <p>Total: R$<span id="total"></span></p>
             </div>
         </div>
 
@@ -108,6 +109,14 @@
                     document.getElementById('imagem').src = imagem;
                 }
 
+                if(quantidade) {
+                    let gg = valor.replace(',', '.');
+                    let calculo = (Number(gg) * Number(quantidade)).toFixed(2);
+                    document.getElementById('total').textContent = calculo.toString().replace('.', ',');
+                }
+
+                
+
                 //limpa sessionStorage.
                 sessionStorage.removeItem('imagemProduto');
                 sessionStorage.removeItem('nomeProduto');
@@ -118,6 +127,11 @@
             })
         </script>
     </section>
+    <form>
+        <div class="formulario">
+            <input type="text">
+        </div>
+    </form>
 </body>
 
 </html>

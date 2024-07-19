@@ -1,0 +1,85 @@
+body{
+    background: #F6F6F6;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.box{
+    background: white;
+    width: 900px;
+    height: 1000px;
+    border-radius: 5px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+}
+
+.categoria-box{
+    background: white;
+    margin-left: 25px;
+    width: 200px;
+    height: 400px;
+    border-radius: 5px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.botoes label{
+    display: inline-block;
+    margin-top: 20px;
+    font-family: "Quicksand", sans-serif;
+    color: white;
+    width: 150px !important;
+    height: 30px;
+    background: #2d2d2d;
+    border: 0px solid #2d2d2d;
+    line-height: 30px;
+}
+
+.botoes label:hover{
+    border-top: 5px solid #ccff00;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+    color: #ccff00;
+    height: 35px;
+    margin-top: 15px;
+}
+
+#dif:hover{
+    margin-top: 15px;
+    height: 35px;
+}
+
+input[type="checkbox"]:checked + .bt-g {
+    border-top: 5px solid #ccff00;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+    color: #ccff00;
+    height: 35px;
+    margin-top: 15px;
+}
+
+.lista-produtos{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    width: 180px;
+    height: 300px;
+    margin: 10px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    flex: 0 1 calc(250px); 
+}

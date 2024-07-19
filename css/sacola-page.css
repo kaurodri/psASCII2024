@@ -24,7 +24,7 @@ section{
 .item p{
     text-align: left;
     margin-left: 15px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 300;
 }
 
@@ -37,11 +37,16 @@ section{
 
 .conf-1{
     display: flex;
-    margin-top: -25px;
+    margin-top: -15px;
 }
 
 .conf-2{
     display: flex;
+    margin-top: -12px;
+}
+
+#quantidade {
+    margin-left: -5px;
 }
 
 .foto img{
@@ -70,6 +75,32 @@ section{
 }
 
 .box{
-    border: 1px solid red;
-    margin: 20px;
+    border: 1px dashed #ccc;
+    margin: 20px;   
+}
+
+.box h2{
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #ccc;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.box p{
+    font-weight: 500;
+    font-size: 17px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario{
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+    /* border: 1px solid red; */
+    padding: 20px;
+    width: 1020px;
 }
