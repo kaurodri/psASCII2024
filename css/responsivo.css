@@ -70,6 +70,10 @@
     }
 
     /* Contatos */
+    .img-resp img{
+        display: block !important;
+    }
+
     .img-sobre img{
         display: none;
     }
@@ -80,6 +84,7 @@
 
     .pagina{
         margin-bottom: 80px;
+        width: 500px !important;
     }
 
     .caixa h2{

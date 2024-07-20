@@ -64,6 +64,10 @@ section{
     height: 400px;
 }
 
+.img-resp img{
+    display: none;
+}
+
 footer{
     margin-top: 50px;
 }
