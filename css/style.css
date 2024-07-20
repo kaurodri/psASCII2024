@@ -168,7 +168,6 @@ body{
     padding: 5px 16px;
     border: 1px solid white;
     margin: 10px;
-    
 }
 
 .categorias a:hover{
@@ -185,13 +184,12 @@ section{
     display: inline-block;
     text-align: center;
     width: 90%;
-
 }
 
 .servicos{
     display: flex;
     margin-top: -10px;
-    
+    margin-bottom: 15px;
 }
 
 .lancamento{
@@ -225,27 +223,6 @@ section{
 .card-text p{
     font-size: 10px;
 }
-/* .card:hover{
-   background: #FF2978;
-    color: white;
-    
-}
-
-.card:hover img{
-    display: none;
-}
-
-.card:hover .card-text{
-    display: none;
-}
-
-.card:hover .texto-oculto{
-    display: block;
-}
-
-.texto-oculto{
-    display: none;
-} */
 
 .card img{
     height: 150px;
@@ -295,9 +272,9 @@ section{
     display: flex;
     width: 100%;
     justify-content: center;
-    padding: 20px;
+    padding: 30px;
+    border-top: 5px solid #38502a;
     background: #000000;
-    height: 500px;
 }
 
 .produtos-btn{
@@ -316,5 +293,20 @@ section{
     border: 2px dashed white;
     padding: 10px 20px;
     height: fit-content;
+}
 
+footer{
+    height: 300px;
+    background-image: linear-gradient(180deg, #0d1b0e,#0d1b0e, black);
+    text-align: center;
+    border-top: 5px solid #ccff00;
+}
+
+.logo-rodape{
+    padding: 50px;
+}
+
+.agencia{
+    font-family: "Quicksand", sans-serif;
+    color: white;
 }
