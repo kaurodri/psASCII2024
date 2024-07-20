@@ -151,6 +151,10 @@ body{
     height: 400px;
 }
 
+#banner-resp{
+    display: none;
+}
+
 .categorias{
     margin-top: -4px;
     height: 50px;

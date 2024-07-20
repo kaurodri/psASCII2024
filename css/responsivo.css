@@ -1,0 +1,49 @@
+@media screen and (max-width: 1005px){
+
+
+    .logo h1{
+        margin-left: -30px;
+        font-size: 15px;
+        width: 100px;
+    }
+    
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu a{
+        font-size: 10px;
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .banner img{
+        height: 150px;
+    }
+
+    section{
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .card{
+        flex: 0 1 calc(250px); 
+    }
+
+    .servicos{
+        display: none;
+    }
+
+    .banner img{
+        /* height: 400px; */
+        display: none;
+    }
+    
+    #banner-resp{
+        display:flex;
+        height: 155px;
+    }
+}
