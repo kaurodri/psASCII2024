@@ -306,6 +306,10 @@ footer{
     padding: 50px;
 }
 
+.logo-rodape p{
+    font-family: "Quicksand", sans-serif;
+}
+
 .agencia{
     font-family: "Quicksand", sans-serif;
     color: white;
