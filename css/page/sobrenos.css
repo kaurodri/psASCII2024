@@ -8,7 +8,9 @@ section{
     margin-top: 15px;
 }
 
-.box{
+.pagina{
+    display: flex;
+    align-items: center;
     background: white;
     border-radius: 5px;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
@@ -18,9 +20,12 @@ section{
 }
 
 .caixa{
-    border: 1px solid red;
     text-align: left;
     padding: 20px;
+}
+
+.img-sobre img{
+    height: 400px;
 }
 
 footer{

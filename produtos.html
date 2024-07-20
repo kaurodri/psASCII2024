@@ -33,9 +33,9 @@
         </div>
         <div class="menu">
             <a href="/index.html">Home</a>
-            <a href="#">Sobre Nós</a>
-            <a href="#">Produtos</a>
-            <a href="#">Contato</a>
+            <a href="/menupage/sobrenos.html">Sobre Nós</a>
+            <a href="/produtos.html">Produtos</a>
+            <a href="/menupage/contato.html">Contato</a>
         </div>
     </nav>
     <header class="header">
@@ -68,7 +68,7 @@
                             <img src="img/tenis-masculino.png">
                             <div class="card-text">
                                 <h3>Tênis Masculino Chuck Taylor Cano Alto</h3>
-                                <p>confeccionada em algodão</p>
+                                <p>modelagem clássica</p>
                             </div>
                             <div class="detalhes-btn">
                                 <p>R$269,90</p>
@@ -98,7 +98,7 @@
                             <img src="img/regata-feminina.png">
                             <div class="card-text">
                                 <h3>Regata Feminina Canelada Clau</h3>
-                                <p>confeccionada em algodão</p>
+                                <p>poliéster com elastano</p>
                             </div>
                             <div class="detalhes-btn">
                                 <p>R$39,90</p>
@@ -113,10 +113,10 @@
                             <img src="img/sandalia-salto.png">
                             <div class="card-text">
                                 <h3>Sandália Salto Alto Triangular Com Tira Azul</h3>
-                                <p>confeccionada em algodão</p>
+                                <p>calcanhar fechado</p>
                             </div>
                             <div class="detalhes-btn">
-                                <p>R$144,90</p>
+                                <p>R$209,90</p>
                                 <a href="produtos/sandalia-salto.html">Detalhes</a>
                             </div>
                         </div>
@@ -128,7 +128,7 @@
                             <img src="img/salopete-jeans.png">
                             <div class="card-text">
                                 <h3>Salopete Jeans Feminina Barra Desfiada</h3>
-                                <p>confeccionada em algodão</p>
+                                <p>alças tradicionais</p>
                             </div>
                             <div class="detalhes-btn">
                                 <p>R$149,90</p>
@@ -143,10 +143,10 @@
                             <img src="img/sapatilha-bege.png">
                             <div class="card-text">
                                 <h3>Sapatilha Bege Couro Bico Redondo</h3>
-                                <p>confeccionada em algodão</p>
+                                <p>suavidade na pisada</p>
                             </div>
                             <div class="detalhes-btn">
-                                <p>R$299,90</p>
+                                <p>R$299,99</p>
                                 <a href="produtos/sapatilha-bege.html">Detalhes</a>
                             </div>
                         </div>
@@ -238,7 +238,7 @@
                         let checkbox = document.getElementById(tag);
                         checkbox.checked = true;
 
-                        aplicarCategoria(checkbox) 
+                        aplicarCategoria(checkbox)
                     }
                     //limpa sessionStorage.
                     sessionStorage.removeItem('tagProdutos');
@@ -246,6 +246,13 @@
             </script>
         </div>
     </section>
+    <footer>
+        <div class="logo-rodape">
+            <h1 class="agencia">Tudo Moda</h1>
+            <p style="color: white;">o melhor site em moda e estilo!</p>
+        </div>
+        <b style="color: white;">© 2024 Tudo Moda. Todos os direitos reservados</b>
+    </footer>
 </body>
 
 </html>

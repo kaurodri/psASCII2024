@@ -139,7 +139,12 @@ form{
     font-size: 19px;
     cursor: pointer;
 }
+
 .formulario button a{
     text-decoration: none;
     color: black;
+}
+
+footer{
+    margin-top: 50px;
 }

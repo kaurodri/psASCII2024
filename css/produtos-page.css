@@ -83,3 +83,7 @@ ul {
 li{
     flex: 0 1 calc(250px); 
 }
+
+footer{
+    margin-top: 50px;
+}
