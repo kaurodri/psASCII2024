@@ -68,4 +68,21 @@
     footer b{
         font-size: 12px;
     }
+
+    /* Contatos */
+    .img-sobre img{
+        display: none;
+    }
+
+    .img-resp img{
+        height: 200px;
+    }
+
+    .pagina{
+        margin-bottom: 80px;
+    }
+
+    .caixa h2{
+        font-size: 20px;
+    }
 }
