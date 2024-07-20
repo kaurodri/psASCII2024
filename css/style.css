@@ -171,6 +171,13 @@ body{
     
 }
 
+.categorias a:hover{
+    color: #000000;
+    border: 1px solid #000000;
+    background: white;
+    cursor: pointer;
+}
+
 section{
     /* border: 1px solid red; */
     margin-left: 5%;

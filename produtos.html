@@ -58,7 +58,7 @@
                             <div class="detalhes-btn">
                                 <p>R$139,90</p>
                                 <a href="produtos/camisa-jeans.html">Detalhes</a>
-                            </div> 
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -73,7 +73,7 @@
                             <div class="detalhes-btn">
                                 <p>R$269,90</p>
                                 <a href="produtos/tenis-masculino.html">Detalhes</a>
-                            </div> 
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -88,7 +88,7 @@
                             <div class="detalhes-btn">
                                 <p>R$99,90</p>
                                 <a href="produtos/bermuda-jeans.html">Detalhes</a>
-                            </div> 
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -103,7 +103,7 @@
                             <div class="detalhes-btn">
                                 <p>R$39,90</p>
                                 <a href="produtos/regata-feminina.html">Detalhes</a>
-                            </div> 
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -118,7 +118,7 @@
                             <div class="detalhes-btn">
                                 <p>R$144,90</p>
                                 <a href="produtos/sandalia-salto.html">Detalhes</a>
-                            </div> 
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -133,7 +133,7 @@
                             <div class="detalhes-btn">
                                 <p>R$149,90</p>
                                 <a href="produtos/salopete-jeans.html">Detalhes</a>
-                            </div> 
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -148,7 +148,7 @@
                             <div class="detalhes-btn">
                                 <p>R$299,90</p>
                                 <a href="produtos/sapatilha-bege.html">Detalhes</a>
-                            </div> 
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -233,11 +233,15 @@
                 }
 
                 window.onload = function () {
-                    //mostrar todos os produtos na página
-                    let produtos = document.querySelectorAll('.lista-produtos li');
-                    produtos.forEach(function (item) {
-                        item.style.display = 'block'; 
-                    });
+                    const tag = sessionStorage.getItem('tagProdutos');
+                    if (tag) {
+                        let checkbox = document.getElementById(tag);
+                        checkbox.checked = true;
+
+                        aplicarCategoria(checkbox) 
+                    }
+                    //limpa sessionStorage.
+                    sessionStorage.removeItem('tagProdutos');
                 }
             </script>
         </div>

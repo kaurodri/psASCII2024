@@ -26,7 +26,9 @@
     </div>
     <nav class="navbar">
         <div class="logo">
-            <a href="index.html"><h1>Tudo Moda</h1></a>
+            <a href="index.html">
+                <h1>Tudo Moda</h1>
+            </a>
         </div>
         <div class="menu">
             <a href="index.html">Home</a>
@@ -45,10 +47,19 @@
         </div>
     </header>
     <div class="categorias">
-        <a href="#">Masculino</a>
-        <a href="#">Feminino</a>
-        <a href="#">Jeans</a>
-        <a href="#">Calçados</a>
+        <a onclick="tag('masculino')">Masculino</a>
+        <a onclick="tag('feminino')">Feminino</a>
+        <a onclick="tag('jeans')">Jeans</a>
+        <a onclick="tag('calcados')">Calçados</a>
+        <script>
+            function tag(id) {
+                //sessionStorage
+                sessionStorage.setItem('tagProdutos', id);
+
+                //envio
+                window.location.href = '/produtos.html';
+            }
+        </script>
     </div>
     <section>
         <div class="lancamento">
@@ -66,7 +77,7 @@
                     <div class="detalhes-btn">
                         <p>R$139,90</p>
                         <a href="produtos/camisa-jeans.html">Detalhes</a>
-                    </div> 
+                    </div>
                 </div>
             </div>
 
@@ -80,7 +91,7 @@
                     <div class="detalhes-btn">
                         <p>R$269,90</p>
                         <a href="produtos/tenis-masculino.html">Detalhes</a>
-                    </div> 
+                    </div>
                 </div>
             </div>
 
@@ -94,7 +105,7 @@
                     <div class="detalhes-btn">
                         <p>R$99,90</p>
                         <a href="produtos/bermuda-jeans.html">Detalhes</a>
-                    </div> 
+                    </div>
                 </div>
             </div>
 
@@ -108,10 +119,10 @@
                     <div class="detalhes-btn">
                         <p>R$39,90</p>
                         <a href="produtos/regata-feminina.html">Detalhes</a>
-                    </div> 
+                    </div>
                 </div>
             </div>
-            
+
             <div class="card">
                 <div class="linkcartao">
                     <img src="img/sandalia-salto.png">
@@ -122,7 +133,7 @@
                     <div class="detalhes-btn">
                         <p>R$144,90</p>
                         <a href="produtos/sandalia-salto.html">Detalhes</a>
-                    </div> 
+                    </div>
                 </div>
             </div>
 
@@ -136,7 +147,7 @@
                     <div class="detalhes-btn">
                         <p>R$149,90</p>
                         <a href="produtos/salopete-jeans.html">Detalhes</a>
-                    </div> 
+                    </div>
                 </div>
             </div>
 
@@ -150,7 +161,7 @@
                     <div class="detalhes-btn">
                         <p>R$299,90</p>
                         <a href="produtos/sapatilha-bege.html">Detalhes</a>
-                    </div> 
+                    </div>
                 </div>
             </div>
 
@@ -160,7 +171,7 @@
         <div class="box-btn">
             <a class="produtos-btn" href="produtos.html">Ver Produtos</a>
         </div>
-        
+
     </div>
 </body>
 
