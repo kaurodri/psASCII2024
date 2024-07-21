@@ -154,7 +154,11 @@
 
     .img-sobre-resp img{
         display: block !important;
-        height: 300px;
+        height: 200px;
+    }
+
+    .box-sobre-res {
+        margin: 10px !important;
     }
 
     /* Produtos */
