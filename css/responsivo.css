@@ -170,12 +170,20 @@
     }
 
     .categoria-box{
-        border: 1px solid red;
         margin-left: 10px !important;
+        position: absolute;
+        width: 90% !important;
+        height: 150px !important;
+        margin: 0 !important;
     }
 
+    /* section input[type="checkbox"]:not(:checked) ~ .box-prod-resp {
+        height: 2300px !important;
+    } */
+
     .box-prod-resp{
-        border: 1px solid red;
+        margin-top: 165px;
+        height: 2300px !important;
     }
 
     
