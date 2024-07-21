@@ -1,138 +1,160 @@
-@media screen and (max-width: 1005px){
+@media screen and (max-width: 1005px) {
 
-    .logo h1{
+    .logo h1 {
         margin-left: -30px;
         font-size: 15px;
         width: 100px;
     }
-    
+
     .menu {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .menu a{
+    .menu a {
         font-size: 10px;
         margin: 5px;
         padding: 18px 10px;
     }
 
-    section{
-        display: flex;
-        justify-content: center;
+    section {
         margin-top: 15px;
-    }
-
-    /* .card{
-        flex: 1 1 calc(250px); 
-    }
-
-    .card-resp{
-
-    } */
-
-    .servicos{
         display: flex;
-        margin-top: 20px !important;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .banner img{
+    .section-index-resp {
+        height: 2270px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .lancamento {
+        margin-bottom: 20px;
+        margin-top: -150px;
+    }
+
+    .servicos {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 2000px;
+        width: 400px;
+        margin-bottom: 20px;
+    }
+
+    .card-resp {
+        width: 300px !important;
+        margin-bottom: 20px;
+    }
+
+    .banner img {
         /* height: 400px; */
         display: none;
     }
-    
-    #banner-resp{
-        display:flex;
+
+    #banner-resp {
+        display: flex;
         width: 100%;
         height: 20%;
     }
 
-    .box-btn a{
+    .box-btn a {
         font-size: 12px;
     }
 
-    footer{
+    footer {
         height: 150px;
     }
 
     .logo-rodape {
         padding: 10px;
     }
-    .logo-rodape h1{
+
+    .logo-rodape h1 {
         font-size: 19px;
     }
 
-    .logo-rodape p{
+    .logo-rodape p {
         font-size: 14px;
     }
 
-    footer b{
+    footer b {
         font-size: 12px;
     }
 
     /* Contatos */
-    .img-resp img{
+    .img-resp img {
         display: block !important;
     }
 
-    .img-sobre img{
+    .img-sobre img {
         display: none;
     }
 
-    .img-resp img{
+    .img-resp img {
         height: 200px;
     }
 
-    .pagina{
+    .pagina {
         margin-bottom: 80px;
         width: 500px !important;
     }
 
-    .caixa h2{
+    .caixa h2 {
         font-size: 20px;
     }
 
     /* Produto */
-    .foto img{
+    .foto img {
         display: none;
     }
 
-    .foto-resp img{
+    .foto-resp img {
         display: block !important;
         height: 300px;
         margin-bottom: 20px;
     }
 
-    .quantidade-select{
+    .quantidade-select {
         display: flex;
         margin-right: 10px;
     }
 
     /* Sacola */
 
-    .section-sacola{
+    .section-sacola {
         display: inline;
     }
 
-    .item, .resumo, .formulario{
+    .item,
+    .resumo,
+    .formulario {
         margin: 20px;
         padding: 10px;
         width: 90% !important;
     }
 
-    .lados{
+    .lados {
         display: inline !important;
     }
 
-    .lados img{
+    .lados img {
         display: none;
     }
 
-    .lado{
+    .lado {
         padding: 2px 20px;
     }
-    .foto-resp img{
+
+    .foto-resp img {
         display: block !important;
     }
 
@@ -140,19 +162,19 @@
         margin-top: -10px;
     }
 
-    .formulario-sacola h2{
+    .formulario-sacola h2 {
         font-size: 19px;
-        margin-left: 20px !important; 
+        margin-left: 20px !important;
     }
 
-    .formulario-sacola button{
+    .formulario-sacola button {
         margin-top: 10px;
-        margin-left: 40px !important; 
+        margin-left: 40px !important;
     }
 
     /* Sobre */
 
-    .img-sobre-resp img{
+    .img-sobre-resp img {
         display: block !important;
         height: 200px;
     }
@@ -163,20 +185,20 @@
 
     /* Produtos */
 
-    .botoes-prod-resp{
+    .botoes-prod-resp {
         /* border: 1px solid red; */
         margin: 15px;
     }
 
-    .bt-g{
+    .bt-g {
         border: 1px solid red;
     }
 
-    #btn-p-resp{
+    #btn-p-resp {
         width: 100px !important;
     }
 
-    .categoria-box{
+    .categoria-box {
         margin-left: 10px !important;
         position: absolute;
         width: 90% !important;
@@ -188,10 +210,10 @@
         height: 2300px !important;
     } */
 
-    .box-prod-resp{
+    .box-prod-resp {
         margin-top: 165px;
         height: 2300px !important;
     }
 
-    
+
 }
