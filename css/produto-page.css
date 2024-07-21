@@ -13,6 +13,10 @@ section{
     border-radius: 7px;
 }
 
+.foto-resp img{
+    display: none;
+}
+
 .infos{
     margin-left: 40px;
     padding: 20px;

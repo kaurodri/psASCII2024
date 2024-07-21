@@ -90,4 +90,93 @@
     .caixa h2{
         font-size: 20px;
     }
+
+    /* Produto */
+    .foto img{
+        display: none;
+    }
+
+    .foto-resp img{
+        display: block !important;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+
+    .quantidade-select{
+        display: flex;
+        margin-right: 10px;
+    }
+
+    /* Sacola */
+
+    .section-sacola{
+        display: inline;
+    }
+
+    .item, .resumo, .formulario{
+        margin: 20px;
+        padding: 10px;
+        width: 90% !important;
+    }
+
+    .lados{
+        display: inline !important;
+    }
+
+    .lados img{
+        display: none;
+    }
+
+    .lado{
+        padding: 2px 20px;
+    }
+    .foto-resp img{
+        display: block !important;
+    }
+
+    .formulario-sacola {
+        margin-top: -10px;
+    }
+
+    .formulario-sacola h2{
+        font-size: 19px;
+        margin-left: 20px !important; 
+    }
+
+    .formulario-sacola button{
+        margin-top: 10px;
+        margin-left: 40px !important; 
+    }
+
+    /* Sobre */
+
+    .img-sobre-resp img{
+        display: block !important;
+        height: 300px;
+    }
+
+    /* Produtos */
+
+    .botoes-prod-resp{
+        /* border: 1px solid red; */
+        margin: 15px;
+        
+        
+    }
+
+    .botoes label{
+        width: 50px !important;
+        
+    }
+
+    .categoria-box{
+        border: 1px solid red;
+        margin-left: 10px !important;
+    }
+
+    .box-prod-resp{
+        border: 1px solid red;
+    }
+
+    
 }
