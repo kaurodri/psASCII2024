@@ -17,8 +17,8 @@
         margin: 5px;
         padding: 18px 10px;
     }
-
-    section {
+    
+    .section-index-resp {
         margin-top: 15px;
         display: flex;
         flex-direction: column;
@@ -102,6 +102,7 @@
 
     .img-resp img {
         height: 200px;
+        margin-left: -40px;
     }
 
     .pagina {
@@ -189,10 +190,6 @@
     .botoes-prod-resp {
         /* border: 1px solid red; */
         margin: 15px;
-    }
-
-    .bt-g {
-        border: 1px solid red;
     }
 
     #btn-p-resp {
