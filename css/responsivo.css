@@ -162,13 +162,14 @@
     .botoes-prod-resp{
         /* border: 1px solid red; */
         margin: 15px;
-        
-        
     }
 
-    .botoes label{
-        width: 50px !important;
-        
+    .bt-g{
+        border: 1px solid red;
+    }
+
+    #btn-p-resp{
+        width: 100px !important;
     }
 
     .categoria-box{
